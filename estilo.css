@@ -1,0 +1,137 @@
+body{
+	background-color:#001724;
+	
+}
+input{
+	background-color:#003f66;
+	width: #60px;
+	height: 40px;
+	border-radius: 5px;
+	color:#fff;
+}
+section.fondoderecho{
+	position:absolute;
+	left:50%;
+	border: 1px; 
+	width: 50%;
+	height: 840px;
+}
+h2{
+	text-align:center;
+	color:#fff;
+	
+}
+H3{
+	position:relative;
+	margin:60px;
+	text-align:justify;
+	color:#fff;
+	background-color:#166502;
+}
+img{
+	width:20%;
+}
+h1{
+	font-family: 'Pinyon Script', cursive;
+	text-align:center;
+	color: white;
+	font-weight:normal;
+	font-size:25pt;
+	background-color:#003f66; 
+	border-radius: 10px;
++}
+p#bot{
+	position:relative;
+	top:-7px;
+	text-align:center;
+	}
+
+form{
+	
+	padding:5px;
+	margin:5px;
+}
+section.fondoizquierdo{
+
+	border: 1px; 
+	width: 50%;
+	height: 840px;
+	
+}
+select{
+position:relative;
+left:55%;
+}
+label{
+position:relative;
+left:25%;
+color:#fff;	
+}
+
+div.uno{
+	
+	font-size: 2,8em;
+	width:95%;
+	height:50%;
+	line-height:1,5;
+	padding:.5em;
+	text-align:left;
+	color:003f66;
+	background-color:#3e796c;
+	border-radius: 5px;
+}
+div#dos{
+	position:relative; 
+	top:15px;
+	width:95%;
+	height:50%;
+	line-height:1,5;
+	padding:.5em;
+	color:000;
+	text-align:center;
+	background-color:#fff;
+	border-radius: 5px;
+}
+div#tres{
+	position:relative;
+	left:1px;
+	top:0px;
+	width:95%;
+	height:50%;
+	color:#fff;
+	font-size: 2,8em;
+	line-height:1,5;
+	padding:.5em;
+	text-align:center;
+	background-color:#fff;
+	border-radius: 5px;
+}
+div#cuatro{
+	position:relative;
+	left:1px;
+	top:15px;
+	width:95%;
+	height:50%;
+	color:#fff;
+	line-height:1,5;
+	padding:.5em;
+	text-align:center;
+	background-color:#3e796c;
+	border-radius: 5px;
+}
+div#asp1{
+	
+	width:46%;
+	background-color:#fff;
+	text-align:center;
+
+}
+div#asp2{
+	position:absolute;
+	left:46%;
+	top: 25%;
+	width:50%;
+	background-color:#fff;
+	text-align:center;
+
+}

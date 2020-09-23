@@ -1,0 +1,311 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset = "UTF-8">
+<LINK REL=StyleSheet HREF="estilo.css" TYPE="text/css" MEDIA=screen> 
+<link href="https://fonts.googleapis.com/css?family=Pinyon+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+</section>
+<section class="fondoderecho">
+<div id="tres">
+
+<h1>Empresa-Publicación</h1>
+<img src="logo.png" >
+
+<h3 id="publicacion" ></h3>
+</div>
+<div id="cuatro">
+
+<h1>Preclasificación-fuzzy-Pedro Pérez</h1>
+<H2>RESULTADO------ <span id="f0"></span></H2>
+<p>ARDUINO------ <span id="f1"></span></p>
+<p>I.A.------ <span id="f2"></span></p>
+<p>Sensores------<span id="f3"></span></p>
+<p>PCB------<span  id="f4"></span></p>
+<p>Control digital------<span id="f5"></span></p>
+<p>Proteus------<span id="f6"></span></p>
+<p >ITIL------<span id="f7"></span></p>
+<p id="bot"><input id="res" type="button" value="Preclasificar" onclick= preclasificar()></p>
+</div>
+</section>
+<section class="fondoizquierdo">
+<div class="uno">
+<h1>Empresa-Electrónica-diseño-Regla</h1>
+<form id="frm1">
+<p><select id="1" name="Arduino" >
+		<option>---</option>
+		<option>Avanzado</option>
+		<option>Medio</option>
+		<option>Básico</option>
+</select>
+<label>Arduino</label></p>
+
+<p><select id="2"name="I.A">
+		<option>---</option>
+		<option>Avanzado</option>
+		<option>Medio</option>
+		<option>Básico</option>
+</select>
+<label>I.A.</label></p>
+
+<p><select id="3"name="Sensores">
+		<option>---</option>
+		<option>Avanzado</option>
+		<option>Medio</option>
+		<option>Básico</option>
+</select>
+<label>Sensores</label></p>	
+
+<p><select id="4"name="PCB">
+		<option>---</option>
+		<option>Avanzado</option>
+		<option>Medio</option>
+		<option>Básico</option>
+</select>
+<label>PCB</label></p>	
+
+<p><select id="5"name="Control digital">
+	<option>---</option>
+		<option>Avanzado</option>
+		<option>Medio</option>
+		<option>Básico</option>
+</select>
+<label>Control digital</label></p>	
+
+<p><select id="6"name="Proteus">
+		<option>---</option>
+		<option>Avanzado</option>
+		<option>Medio</option>
+		<option>Básico</option>
+</select>
+<label>Proteus</label>
+</p>	
+
+	<select id="7"name="ITIL">
+	<option>---</option>
+		<option>Avanzado</option>
+		<option>Medio</option>
+		<option>Básico</option>
+</select><label>ITIL</label>
+	</select>
+	</form><BR>
+	<p id="bot"><input id="pub" type="button" value="Publicación" onclick= publicar()></p>
+	</div>
+<div id="dos">
+<h1>Aspirante-Pedro Pérez-Autoevaluación</h1>
+
+<form id="frm2">
+  
+     <div id="asp1">
+	 <span id="a1" style="visibility:hidden">Arduino</span> <br>
+	 <input id="b1" type="range" name="conjunto" value="0" list="listanvalores" onchange=(Valor(conjunto.value,1)) style="visibility:hidden">
+	<datalist id="listanvalores">
+	  <option value="0" label="0"></option>
+	  <option value="20" label="20"></option>
+	  <option value="40" label="40"></option>
+	  <option value="60" label="60"></option>
+	  <option value="80" label="80"></option>
+	  <option value="100" label="100"></option>
+	</datalist>
+	<span id="c1" style="visibility:hidden">0</span><br>
+  
+       <span id="a2" style="visibility:hidden">I.A.</span> <br>
+	   <input id="b2" type="range" name="conjunto1" value="0" list="listanvalores" onchange=(Valor(conjunto1.value,2)) style="visibility:hidden">
+	<datalist id="listanvalores1">
+	  <option value="0" label="0"></option>
+	  <option value="20" label="20"></option>
+	  <option value="40" label="40"></option>
+	  <option value="60" label="60"></option>
+	  <option value="80" label="80"></option>
+	  <option value="100" label="100"></option>
+	</datalist>
+	<span id="c2" style="visibility:hidden">0</span><br>
+  
+          <span id="a3" style="visibility:hidden">Sensores</span><br>
+<input id="b3" type="range" name="conjunto2" value="0" list="listanvalores" onchange=(Valor(conjunto2.value,3)) style="visibility:hidden">
+	<datalist id="listanvalores2">
+	  <option value="0" label="0"></option>
+	  <option value="20" label="20"></option>
+	  <option value="40" label="40"></option>
+	  <option value="60" label="60"></option>
+	  <option value="80" label="80"></option>
+	  <option value="100" label="100"></option>
+	</datalist>
+	<span id="c3" style="visibility:hidden">0</span><br>
+	
+  
+ <span id="a4" style="visibility:hidden">PCB</span><br> 
+ <input id="b4" type="range" name="conjunto3"  value="0" list="listanvalores" onchange=(Valor(conjunto3.value,4)) style="visibility:hidden">
+	<datalist id="listanvalores3">
+	  <option value="0" label="0"></option>
+	  <option value="20" label="20"></option>
+	  <option value="40" label="40"></option>
+	  <option value="60" label="60"></option>
+	  <option value="80" label="80"></option>
+	  <option value="100" label="100"></option>
+	</datalist>
+	<span id="c4" style="visibility:hidden">0</span><br>
+ </div>
+ <div id="asp2">
+ <span id="a5" style="visibility:hidden">Control digital</span> <br>
+ <input id="b5" type="range" name="conjunto4" value="0" list="listanvalores" onchange=(Valor(conjunto4.value,5)) style="visibility:hidden">
+	<datalist id="listanvalores4">
+	  <option value="0" label="0"></option>
+	  <option value="20" label="20"></option>
+	  <option value="40" label="40"></option>
+	  <option value="60" label="60"></option>
+	  <option value="80" label="80"></option>
+	  <option value="100" label="100"></option>
+	</datalist>
+	<span id="c5" style="visibility:hidden">0</span><br>
+  
+ <span id="a6" style="visibility:hidden">ITIL</span> <br>
+ <input id="b6" type="range" name="conjunto5" value="0" list="listanvalores" onchange=(Valor(conjunto5.value,6)) style="visibility:hidden">
+	<datalist id="listanvalores5">
+	  <option value="0" label="0"></option>
+	  <option value="20" label="20"></option>
+	  <option value="40" label="40"></option>
+	  <option value="60" label="60"></option>
+	  <option value="80" label="80"></option>
+	  <option value="100" label="100"></option>
+	</datalist>
+	<span id="c6" style="visibility:hidden">0</span><br>
+ 
+            <span id="a7" style="visibility:hidden">YARN</span> <br>
+			<input id="b7" type="range" name="conjunto6" value="0" list="listanvalores" onchange=(Valor(conjunto6.value,7)) style="visibility:hidden">
+	<datalist id="listanvalores6">
+	  <option value="0" label="0"></option>
+	  <option value="20" label="20"></option>
+	  <option value="40" label="40"></option>
+	  <option value="60" label="60"></option>
+	  <option value="80" label="80"></option>
+	  <option value="100" label="100"></option>
+	</datalist>
+	<span id="c7" style="visibility:hidden">0</span>
+  </div>
+</form>
+</div>
+</body>
+<script>
+var marco;
+
+function preclasificar(){
+var minimo=100000;
+var k;
+for (k=1;k<=7;k++)
+{
+	d=document.getElementById("f"+k).innerHTML;
+	if (d<minimo && d!="")
+	{minimo=d;
+	}
+
+	//alert(d +" :  "+  minimo);
+}
+	if(minimo==0){
+	//alert("Descartado");
+	document.getElementById("f0").innerHTML="Descartado";
+	}
+	if (minimo>0){
+	//alert("Aceptado");
+	document.getElementById("f0").innerHTML="Aceptado";
+	}
+
+}
+function publicar(){
+	var a;
+	var avanzado="";
+	var medio="";
+	var basico="";
+	var k;
+	var inicio;
+	
+	for(k=1;k<=7;k++)
+	{
+		document.getElementById("a"+k).style.visibility ='hidden';
+		document.getElementById("b"+k).style.visibility ='hidden';
+		document.getElementById("c"+k).style.visibility ='hidden';
+	}
+	for(k=1;k<=7;k++)
+	{
+	a=document.getElementById(k).value;
+	
+	if (a=="Avanzado"){
+		avanzado=avanzado +", " + document.getElementById(k).name;
+		document.getElementById("a"+k).style.visibility ="visible";
+		document.getElementById("b"+k).style.visibility ="visible";
+		document.getElementById("c"+k).style.visibility ="visible";
+		
+	}
+	if (a=="Medio"){
+		medio=medio + ", " + document.getElementById(k).name;
+		document.getElementById("a"+k).style.visibility ="visible";
+		document.getElementById("b"+k).style.visibility ="visible";
+		document.getElementById("c"+k).style.visibility ="visible";
+		
+	}
+	if (a=="Básico"){
+		basico=basico +", " + document.getElementById(k).name;
+		document.getElementById("a"+k).style.visibility ="visible";
+		document.getElementById("b"+k).style.visibility ="visible";
+		document.getElementById("c"+k).style.visibility ="visible";
+		
+	}
+	}
+	inicio="Se necesita desarrollador FrontEnd con";
+	if (avanzado!=""){avanzado="  conocimiento avanzado en: "+ avanzado +". "}
+	if (medio!=""){medio="Conocimiento medio en: "+ medio + ". "}
+	if (basico!=""){basico="básico en: "+ basico}
+	document.getElementById("publicacion").innerHTML=inicio +  avanzado + medio + basico;
+}
+function Valor(valor, quien){
+	var b;
+	var r;
+	var a;
+	var arreglo=[100,100,100,100,100,100,100];
+
+	b=conjuntoBajo(valor);
+	r=conjuntoMedio(valor);
+	a=conjuntoAlto(valor);
+	document.getElementById("c"+quien).innerHTML=valor;//ojo aqui
+	marco=document.getElementById(quien).value;
+	//alert("("+b+"; "+r+"; "+a+ ")"+ "["+quien +"-"+ marco+"]");
+	if(marco=="Avanzado"){arreglo[quien]=a;}
+	if(marco=="Medio"){
+	if(r>=a){
+	arreglo[quien]=r;
+	}
+	else{arreglo[quien]=a;}
+	
+	}
+	if(marco=="Básico"){arreglo[quien]=1;}
+	//alert(arreglo[quien]);
+	document.getElementById("f"+quien).innerHTML=arreglo[quien];
+}
+
+function conjuntoBajo(valor){
+	var bajo;
+	if(valor<=30){bajo=1;}
+	if(valor>30 && valor<=50){bajo=parseInt((-0.05*valor+2.5)*100)/100;}
+	if(valor>50){bajo=0;}
+	return bajo;
+}
+function conjuntoMedio(valor){
+	var regular;
+	if ((valor>=0 && valor <30) || valor>90){regular=0;}
+	if(valor>=30 && valor<50){regular=parseInt((0.05*valor-1.5)*100)/100;}
+	if(valor>=50 && valor<=70){regular=1;}
+	if(valor>70 && valor<=90){regular=parseInt((-0.05*valor+4.5)*100)/100;}
+	return regular;
+}
+function conjuntoAlto(valor){
+	var alto;
+	if (valor <70){alto=0;}
+	if(valor>=70 && valor<90){alto=parseInt((0.05*valor-3.5)*100)/100;}
+	if(valor>=90 && valor<=100){alto=1;}
+	return alto;
+}
+
+</script>
+</html>
+</DOCTYPE>
